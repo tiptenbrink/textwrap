@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "backports.textwrap"
+version = "0.1.0"
+description = ""
+authors = ["Tip ten Brink <75669206+tiptenbrink@users.noreply.github.com>"]
+packages = [
+    { include = "backports" },
+]
+
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[tool.poetry.dev-dependencies]
+cwcwidth = "^0.1.5"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

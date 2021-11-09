@@ -1,0 +1,37 @@
+[[package]]
+name = "cwcwidth"
+version = "0.1.5"
+description = "Python bindings for wc(s)width"
+category = "dev"
+optional = false
+python-versions = ">=3.6"
+
+[metadata]
+lock-version = "1.1"
+python-versions = "^3.7"
+content-hash = "154139cedd85f906319648e69cc0cf5c7d7adc8cbc8e6228100e853f73c20fb8"
+
+[metadata.files]
+cwcwidth = [
+    {file = "cwcwidth-0.1.5-cp36-cp36m-macosx_10_9_x86_64.whl", hash = "sha256:6fbbdbc742d78d732f0cfd3f69672f3805ec6c766f14460f8c392f624ea7af09"},
+    {file = "cwcwidth-0.1.5-cp36-cp36m-manylinux_2_5_i686.manylinux1_i686.manylinux_2_12_i686.manylinux2010_i686.whl", hash = "sha256:77c0492c65555dfd022635ffc83365bbf2b15e95fde030b95ee9b2409ce98909"},
+    {file = "cwcwidth-0.1.5-cp36-cp36m-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_12_x86_64.manylinux2010_x86_64.whl", hash = "sha256:a6a1b285655c7c86ceebe241f722fe19ccdef4891f7dced8cd818c966b6bb9d9"},
+    {file = "cwcwidth-0.1.5-cp36-cp36m-win32.whl", hash = "sha256:d3dc22afbaeba3b3a168e6a15e194d55fb63f01720feee53051b62f0f1c6165f"},
+    {file = "cwcwidth-0.1.5-cp36-cp36m-win_amd64.whl", hash = "sha256:672b0d4b9d39642c023a80daf4a8623b3aa63a31275c20f705569e3b50021b06"},
+    {file = "cwcwidth-0.1.5-cp37-cp37m-macosx_10_9_x86_64.whl", hash = "sha256:f1777c325f7153b4e430d540a3ae2e8595b8117c10e5e3c2f65862af95ff94f5"},
+    {file = "cwcwidth-0.1.5-cp37-cp37m-manylinux_2_5_i686.manylinux1_i686.manylinux_2_12_i686.manylinux2010_i686.whl", hash = "sha256:ae134791ea6024bc0397f6b6a15d398f31167ad4b71190278e9c02178dad6948"},
+    {file = "cwcwidth-0.1.5-cp37-cp37m-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_12_x86_64.manylinux2010_x86_64.whl", hash = "sha256:268775831c952d45cf8165bc9168585868e933a87b72f6f1bd35230ad5206f1f"},
+    {file = "cwcwidth-0.1.5-cp37-cp37m-win32.whl", hash = "sha256:4c3ab17f0ee34d71b7de12d543eb40f1a6aae9339c9221b96b06970e6299bd10"},
+    {file = "cwcwidth-0.1.5-cp37-cp37m-win_amd64.whl", hash = "sha256:106efcbe26c495720cdfd4694e4c191ce1a3c1268b2d90356c875fd109d78a46"},
+    {file = "cwcwidth-0.1.5-cp38-cp38-macosx_10_9_x86_64.whl", hash = "sha256:4a25161e4302413b8b4c3379b29c1adcbe04c05380a6dfc8e4eb0e3938e4b3f9"},
+    {file = "cwcwidth-0.1.5-cp38-cp38-manylinux_2_5_i686.manylinux1_i686.manylinux_2_12_i686.manylinux2010_i686.whl", hash = "sha256:a6385cfdb3f0cfd4f42ab73d2c965e8f133f4f78ad56a7495f6e5924165a6c73"},
+    {file = "cwcwidth-0.1.5-cp38-cp38-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_12_x86_64.manylinux2010_x86_64.whl", hash = "sha256:f57a3784c799553a67d5ebc2c4854d4cc95e8c2c01f10861b97a0a829c09c36e"},
+    {file = "cwcwidth-0.1.5-cp38-cp38-win32.whl", hash = "sha256:3fe12ba738548ff5ad3081621d22b7bff97fa78258c44a6586e97ec4f1430739"},
+    {file = "cwcwidth-0.1.5-cp38-cp38-win_amd64.whl", hash = "sha256:b05739a439f815c85b47abfb3fea301354762950142539d13263a353f21a90f6"},
+    {file = "cwcwidth-0.1.5-cp39-cp39-macosx_10_9_x86_64.whl", hash = "sha256:21701b63cc4e287a197e65c033583bbea674ec7176f983c5fff77fa82118d440"},
+    {file = "cwcwidth-0.1.5-cp39-cp39-manylinux_2_5_i686.manylinux1_i686.manylinux_2_12_i686.manylinux2010_i686.whl", hash = "sha256:66addcb77a16d3e1ab817bea337ffb2509c57af6d91f5515c37811b081e7a448"},
+    {file = "cwcwidth-0.1.5-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_12_x86_64.manylinux2010_x86_64.whl", hash = "sha256:1dc35642fd1a26ce63236c18d7d4a32909be2b1e99b272be95859872f97d1d28"},
+    {file = "cwcwidth-0.1.5-cp39-cp39-win32.whl", hash = "sha256:9321274eca7fd4323a3f0eb472d08a08dfa7e2e0d797b713167d5106e41c92ad"},
+    {file = "cwcwidth-0.1.5-cp39-cp39-win_amd64.whl", hash = "sha256:23fa1021135b8b99e9d4478097ce42aaa17d957c037d5a76e990de20262d76d4"},
+    {file = "cwcwidth-0.1.5.tar.gz", hash = "sha256:2c840e7d85f6de45c45986b416d79312c91882e1121b78d4c347e49c4238c09d"},
+]

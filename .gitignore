@@ -1,0 +1,5 @@
+.python-version
+dist
+**/.pyc
+**/__pycache__/**
+.idea
