@@ -1,16 +1,15 @@
 [tool.poetry]
 name = "backports.textwrap"
-version = "0.1.0"
+version = "0.1.2"
 description = "A backport of upcoming python/cpython#28136"
 authors = ["Tip ten Brink <75669206+tiptenbrink@users.noreply.github.com>"]
 packages = [
-    { include = "src/backports" },
+    { include = "backports", from = "src" },
 ]
+readme = "README.md"
 
 [tool.poetry.urls]
 "Source Code" = "https://github.com/tiptenbrink/textwrap"
-
-
 
 [tool.poetry.dependencies]
 python = "^3.7"
