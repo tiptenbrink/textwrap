@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 #
 # Test suite for the textwrap module.
 #
@@ -10,8 +11,7 @@
 
 import unittest
 import unicodedata
-
-from src.backports.textwrap import TextWrapper, wrap, fill, dedent, indent, shorten
+from backports.textwrap import TextWrapper, wrap, fill, dedent, indent, shorten
 
 
 class BaseTestCase(unittest.TestCase):
@@ -434,6 +434,7 @@ What a mess!
     def test_bad_width(self):
         # Ensure that width <= 0 is caught.
         text = "Whatever, it doesn't matter."
+
         self.assertRaises(ValueError, wrap, text, 0)
         self.assertRaises(ValueError, wrap, text, -1)
 
