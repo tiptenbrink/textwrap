@@ -6,8 +6,8 @@ on:
     branches: [ ci ]
 
 jobs:
-  build:
-    name: Test
+  buildtest:
+    name: Build-Test
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -39,3 +39,35 @@ jobs:
         run: |
           source $VENV
           pytest
+      - name: Build
+        run: poetry build
+      - name: Upload artifact
+      - uses: actions/upload-artifact@v2
+      - with:
+          name: dist
+          path: ${{ github.workspace }}/dist/
+  publish:
+    needs: [buildtest]
+    name: Wheel-Publish
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout rustfrc
+      uses: actions/checkout@v2
+    - name: Download artifact
+      uses: actions/download-artifact@v2
+      with:
+        name: dist
+        path: ${{ github.workspace }}/dist/
+    - name: Set up python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.9
+    - name: Install wheel test
+      run: |
+        pip install ${{ github.workspace }}/dist/*.whl
+    - name: Publish a Python distribution to PyPI
+      if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags')
+      uses: pypa/gh-action-pypi-publish@release/v1
+      with:
+        user: __token__
+        password: ${{ secrets.PYPI_API_TOKEN }}
