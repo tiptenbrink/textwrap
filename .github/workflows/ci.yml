@@ -66,7 +66,7 @@ jobs:
       run: |
         pip install ${{ github.workspace }}/dist/*.whl
     - name: Publish a Python distribution to PyPI
-      if: github.event_name == 'release' && github.event.action == 'published'
+      if: ${{ github.event_name == 'release' }}  && ${{ github.event.action == 'published' }}
       uses: pypa/gh-action-pypi-publish@release/v1
       with:
         user: __token__
