@@ -1,7 +1,7 @@
 name: CI
 on:
   push:
-    branches: [ main ]
+    branches: [ ci ]
   pull_request:
   release:
     types: [ published ]
@@ -11,6 +11,10 @@ jobs:
     name: Build-Test
     runs-on: ubuntu-latest
     steps:
+      - run: echo "event name is:" ${{ github.event_name }} 
+      - run: echo "event type is:" ${{ github.event.action }}
+      - run: echo "event name is:" ${{ github.event_name == 'release' }} 
+      - run: echo "event type is:" ${{ github.event.action == 'published' }}
       - uses: actions/checkout@v2
       - name: Set up Python
         uses: actions/setup-python@v2
