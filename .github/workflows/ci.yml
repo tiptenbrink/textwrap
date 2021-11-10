@@ -2,6 +2,8 @@ name: CI
 on:
   # Run build and tests on push on branch, pull request and release publish
   workflow_dispatch:
+  push:
+    branches: [ ci ]
 
 jobs:
   build:
