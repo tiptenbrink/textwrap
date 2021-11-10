@@ -11,6 +11,8 @@ jobs:
     name: Build-Test
     runs-on: ubuntu-latest
     steps:
+      - run: echo "event name is:" ${{ github.event_name }} 
+      - run: echo "event type is:" ${{ github.event.action }} 
       - uses: actions/checkout@v2
       - name: Set up Python
         uses: actions/setup-python@v2
@@ -66,7 +68,7 @@ jobs:
       run: |
         pip install ${{ github.workspace }}/dist/*.whl
     - name: Publish a Python distribution to PyPI
-      if: github.event_name == 'release' && github.event.action == 'published'
+      if: ${{ github.event_name == 'release' }}  && ${{ github.event.action == 'published' }}
       uses: pypa/gh-action-pypi-publish@release/v1
       with:
         user: __token__
