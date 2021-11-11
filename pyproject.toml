@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "backports.textwrap"
-version = "0.1.4"
+version = "0.1.5"
 description = "A backport of upcoming python/cpython#28136"
 authors = ["Tip ten Brink <75669206+tiptenbrink@users.noreply.github.com>"]
 packages = [
